@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #F7F1E5;
+        }
+
+        header {
+            background-color: #898121;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: #E7B10A;
+            text-shadow: 0px 2px 12px #4C4B16;
+        }
+
+        article {
+            padding: 20px;
+            width: 100%;
+            background-color: #898121;
+        }
+
+        footer {
+            background-color: #4C4B16;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #E7B10A;
+            padding: 10px;
+            color: #F7F1E5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            overflow: hidden;
+        }
+
+        nav li {
+            float: left;
+            margin: 0 4px;
+        }
+
+        nav li a {
+            display: block;
+            text-align: center;
+            color: #4C4B16;
+            padding: 16px;
+            text-decoration: none;
+            transition: ease-in-out .3s;
+        }
+
+        nav li a:hover {
+            background-color: #898121;
+            color: #F7F1E5;
+            border-radius: 20px;
+            transition: ease-in-out .3s;
+        }
+        table {
+            width: 100%;
+            border: 1px solid #4C4B16;
+            margin-bottom: 8px;
+        }
+        .btnSimpan {
+            width: 90px;
+            height: 30px;
+            background-color: #E7B10A;
+            color: #4C4B16;
+            border-radius: 8px;
+            border-style: none;
+            transition: ease-in-out .2s;
+        }
+        .btnSimpan:hover {
+            background-color: #898121;
+            color: #E7B10A;
+            cursor: pointer;
+            transition: ease-in-out .2s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Data Karyawan</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Beranda</a></li>
+            <li><a href="/karyawan/index.html">Karyawan</a></li>
+            <li><a href="/bagian/index.html">Bagian</a></li>
+            <li><a href="/penggajian/index.html">Penggajian</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <form action="">
+            <fieldset>
+                <legend>Tambah Karyawan</legend>
+                <p>
+                    <label for="">ID :</label>
+                    <input type="text" placeholder="ID Harus Diisi">
+                </p>
+                <p>
+                    <label for="">NAMA :</label>
+                    <input type="text" placeholder="NAMA Harus Diisi">
+                </p>
+                <p>
+                    <button class="btnSimpan">SIMPAN</button>
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>Powered by nonedity <time datetime="2023">2023</time></p>
+    </footer>
+</body>
+
+</html>
